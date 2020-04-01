@@ -6,7 +6,7 @@
 
 DATE=`date +%Y%m%d%H%M`
 
-if [ "$DEPLOYMENT_GROUP_NAME" == "int.shokinfractrl" ]
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-int" ]
 then
         touch -t $DATE /var/www/int.shokinfractrl/*/*/*/*
         mv /var/www/temp /var/www/int.shokinfractrl
@@ -23,7 +23,7 @@ then
 	cd /var/www/int.shokinfractrl/
 fi
 
-if [ "$DEPLOYMENT_GROUP_NAME" == "uat.shokinfractrl" ]
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-uat" ]
 then
         #touch -t $DATE /var/www/uat.shokinfractrl/*/*/*/*
         mv /var/www/temp /var/www/uat.shokinfractrl
@@ -40,7 +40,7 @@ then
         cd /var/www/uat.shokinfractrl/
 fi
 
-if [ "$DEPLOYMENT_GROUP_NAME" == "pro.shokinfractrl" ]
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-pro" ]
 then
         #touch -t $DATE /var/www/uat.shokinfractrl/*/*/*/*
         mv /var/www/temp /var/www/pro.shokinfractrl
