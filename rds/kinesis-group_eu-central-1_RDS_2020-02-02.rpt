@@ -1,0 +1,718 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 60, 
+            "LicenseModel": "postgresql-license", 
+            "MonitoringRoleArn": "arn:aws:iam::884998542479:role/rds-monitoring-role", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-00c84d75a14390750"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-11T00:26:42.964Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:26-22:56", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-083824d4c40488f10", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-013660b301a40246f", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-014d3f6deacf814b1", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-046588797b2fa0475", 
+                "VpcId": "vpc-046588797b2fa0475", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kag-mainnet-europe-eu-central-1a", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "KAGMainnetEurope", 
+            "PreferredMaintenanceWindow": "sat:01:19-sat:01:49", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kag-mainnet-europe-eu-central-1a.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "EnhancedMonitoringResourceArn": "arn:aws:logs:eu-central-1:884998542479:log-group:RDSOSMetrics:log-stream:db-5QRSCGH763PEC2RYBQO6LNXDBQ", 
+            "AvailabilityZone": "eu-central-1a", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kag-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-5QRSCGH763PEC2RYBQO6LNXDBQ", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kag-mainnet-europe-eu-central-1a"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 60, 
+            "LicenseModel": "postgresql-license", 
+            "MonitoringRoleArn": "arn:aws:iam::884998542479:role/rds-monitoring-role", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-00c84d75a14390750"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-11T00:32:14.583Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:26-22:56", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-083824d4c40488f10", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-013660b301a40246f", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-014d3f6deacf814b1", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-046588797b2fa0475", 
+                "VpcId": "vpc-046588797b2fa0475", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kag-mainnet-europe-eu-central-1b", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "KAGMainnetEurope", 
+            "PreferredMaintenanceWindow": "wed:21:34-wed:22:04", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kag-mainnet-europe-eu-central-1b.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "EnhancedMonitoringResourceArn": "arn:aws:logs:eu-central-1:884998542479:log-group:RDSOSMetrics:log-stream:db-XQJS2XYA3FETTEHBLJCD6NI2JQ", 
+            "AvailabilityZone": "eu-central-1b", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kag-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-XQJS2XYA3FETTEHBLJCD6NI2JQ", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kag-mainnet-europe-eu-central-1b"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-00c84d75a14390750"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-11T00:39:32.225Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:26-22:56", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-083824d4c40488f10", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-013660b301a40246f", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-014d3f6deacf814b1", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-046588797b2fa0475", 
+                "VpcId": "vpc-046588797b2fa0475", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kag-mainnet-europe-eu-central-1c", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "KAGMainnetEurope", 
+            "PreferredMaintenanceWindow": "sat:01:19-sat:01:49", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kag-mainnet-europe-eu-central-1c.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "AvailabilityZone": "eu-central-1c", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kag-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-H4TIC4QOCXLUXVMOELUKK5D7Q4", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kag-mainnet-europe-eu-central-1c"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-093c197bc04915749"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-27T12:25:58.458Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2020-02-03T03:19:37Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "00:53-01:23", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-08e8353a54d7d0d3c", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-06401139c903a8771", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-057e136c3ea5a8abb", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-05cfa5bc92972a320", 
+                "VpcId": "vpc-05cfa5bc92972a320", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kag-testnet-europe", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "mon:00:20-mon:00:50", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kag-testnet-europe.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.11", 
+            "AvailabilityZone": "eu-central-1b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-DKNEBUK454GDZHE6MAVCFQFE7E", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.small", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kag-testnet-europe"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 60, 
+            "LicenseModel": "postgresql-license", 
+            "MonitoringRoleArn": "arn:aws:iam::884998542479:role/rds-monitoring-role", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-010ea4a39aaf4bac0"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-10T23:50:08.677Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:02-22:32", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0718157c1f10c76f8", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0e95ccc5ed958d675", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0d87e8455177c79ea", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-0c73f0929ef279d5e", 
+                "VpcId": "vpc-0c73f0929ef279d5e", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kau-mainnet-europe-eu-central-1a", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "sun:04:12-sun:04:42", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kau-mainnet-europe-eu-central-1a.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "EnhancedMonitoringResourceArn": "arn:aws:logs:eu-central-1:884998542479:log-group:RDSOSMetrics:log-stream:db-5T5MO4PY42G7GEPVKPGDY5BD3M", 
+            "AvailabilityZone": "eu-central-1a", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kau-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-5T5MO4PY42G7GEPVKPGDY5BD3M", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kau-mainnet-europe-eu-central-1a"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 60, 
+            "LicenseModel": "postgresql-license", 
+            "MonitoringRoleArn": "arn:aws:iam::884998542479:role/rds-monitoring-role", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-010ea4a39aaf4bac0"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-10T23:54:53.389Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:02-22:32", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0718157c1f10c76f8", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0e95ccc5ed958d675", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0d87e8455177c79ea", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-0c73f0929ef279d5e", 
+                "VpcId": "vpc-0c73f0929ef279d5e", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kau-mainnet-europe-eu-central-1b", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "fri:22:32-fri:23:02", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kau-mainnet-europe-eu-central-1b.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "EnhancedMonitoringResourceArn": "arn:aws:logs:eu-central-1:884998542479:log-group:RDSOSMetrics:log-stream:db-SBP5KJL4CNNKTIT4X2TUVGJUKU", 
+            "AvailabilityZone": "eu-central-1b", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kau-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-SBP5KJL4CNNKTIT4X2TUVGJUKU", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kau-mainnet-europe-eu-central-1b"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-010ea4a39aaf4bac0"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-11T00:00:19.677Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:aurora-postgresql-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "aurora-postgresql", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.aurora-postgresql9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:02-22:32", 
+            "PromotionTier": 1, 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0718157c1f10c76f8", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0e95ccc5ed958d675", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0d87e8455177c79ea", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-0c73f0929ef279d5e", 
+                "VpcId": "vpc-0c73f0929ef279d5e", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 1, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kau-mainnet-europe-eu-central-1c", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "sun:04:12-sun:04:42", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kau-mainnet-europe-eu-central-1c.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.12", 
+            "AvailabilityZone": "eu-central-1c", 
+            "DomainMemberships": [], 
+            "DBClusterIdentifier": "kau-mainnet-europe", 
+            "StorageType": "aurora", 
+            "DbiResourceId": "db-BQCZ5ELU7LR5D25XIKT4NA2XUQ", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-central-1:884998542479:key/94a3a7c9-484e-418c-aef9-cba293d64933", 
+            "StorageEncrypted": true, 
+            "DBInstanceClass": "db.r4.large", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kau-mainnet-europe-eu-central-1c"
+        }, 
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-024dfbb84f79157ed"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-28T04:11:44.289Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-9-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2020-02-03T03:20:57Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres9.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "22:02-22:32", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0fbec4158e6fa0331", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-091880d79a7e34e1a", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-09c6f656ef5a18a0f", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-central-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-063e955607729aa62", 
+                "VpcId": "vpc-063e955607729aa62", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:eu-central-1:884998542479:db:kau-testnet-europe", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "KAUTestnetEurope", 
+            "PreferredMaintenanceWindow": "sun:23:19-sun:23:49", 
+            "Endpoint": {
+                "HostedZoneId": "Z1RLNUO7B9Q6NB", 
+                "Port": 5432, 
+                "Address": "kau-testnet-europe.c4vwmvawhwep.eu-central-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "9.6.11", 
+            "AvailabilityZone": "eu-central-1a", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-ZE6C2LZTJ6IPZP3DROJF44KP6U", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.small", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "kau-testnet-europe"
+        }
+    ]
+}

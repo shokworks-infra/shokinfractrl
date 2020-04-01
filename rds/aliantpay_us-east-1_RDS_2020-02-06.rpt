@@ -1,0 +1,113 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "adminaliant", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-8a6011dc"
+                }
+            ], 
+            "InstanceCreateTime": "2020-01-12T19:57:56.286Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mariadb-10-2"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mariadb", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2020-02-06T13:15:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mariadb10.2", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "10:02-10:32", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-ccf3e390", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-bed68d80", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1e"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-bd829093", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-3541e678", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-887b6cef", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1d"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-3bff3635", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1f"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-3c7e5d46", 
+                "VpcId": "vpc-3c7e5d46", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:283746063619:db:aliantpayment", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "tue:05:29-tue:05:59", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "aliantpayment.ccrooms1n74f.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "10.2.21", 
+            "MaxAllocatedStorage": 1000, 
+            "DeletionProtection": true, 
+            "AvailabilityZone": "us-east-1c", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-CW5DNCFN3AQVEKG4HH2MFNRJ54", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "aliantpayment"
+        }
+    ]
+}

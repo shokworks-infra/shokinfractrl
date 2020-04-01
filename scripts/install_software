@@ -9,6 +9,7 @@ DATE=`date +%Y%m%d%H%M`
 if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-int" ]
 then
         mv /var/www/temp /var/www/int.shokinfractrl
+	aws s3 cp  s3://shokinfractrl/conexion.php_shokinfractrl-int /var/www/int.shokinfractrl/config/conexion.php
 	chown www-data.www-data /var/www/int.shokinfractrl/
 	chown www-data.www-data /var/www/int.shokinfractrl/* -R
 	chown www-data.www-data /var/www/int.shokinfractrl/.[a-z]* -R

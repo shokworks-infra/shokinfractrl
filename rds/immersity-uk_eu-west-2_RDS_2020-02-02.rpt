@@ -1,0 +1,100 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "adminimm", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-0cd699d59746d2a68"
+                }, 
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-0cf028a9f5911231c"
+                }
+            ], 
+            "InstanceCreateTime": "2018-10-12T17:06:30.730Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mariadb-10-2"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mariadb", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2020-02-03T03:15:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mariadb10.2", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "04:32-05:02", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-87f750fd", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-west-2a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-84f46fed", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-west-2c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0f2bc143", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-west-2b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default", 
+                "VpcId": "vpc-839706eb", 
+                "DBSubnetGroupDescription": "default", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:eu-west-2:168068386114:db:imm", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "imm_dev", 
+            "PreferredMaintenanceWindow": "thu:03:58-thu:04:28", 
+            "Endpoint": {
+                "HostedZoneId": "Z1TTGA775OQIYO", 
+                "Port": 3306, 
+                "Address": "imm.cvv4xjcvbyqk.eu-west-2.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "10.2.15", 
+            "EnabledCloudwatchLogsExports": [
+                "audit", 
+                "error", 
+                "general", 
+                "slowquery"
+            ], 
+            "AvailabilityZone": "eu-west-2b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-67SDNVFUC5ZWFJOGSAHQZR7VHI", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "imm"
+        }
+    ]
+}

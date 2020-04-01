@@ -1,0 +1,118 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": true, 
+            "MasterUsername": "adminshok", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-07dd2f7320843b034"
+                }, 
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-d4e99f8a"
+                }
+            ], 
+            "InstanceCreateTime": "2019-11-20T21:15:41.262Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mariadb-10-2"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mariadb", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2020-02-06T13:20:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mariadb10.2", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "04:56-05:26", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-65f4c24b", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-436a4124", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-24fe132a", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1f"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-6dd62d20", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1d"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-30093d6c", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-d0a6d9ee", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1e"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "default-vpc-0efeba74", 
+                "VpcId": "vpc-0efeba74", 
+                "DBSubnetGroupDescription": "Created from the RDS Management Console", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:067895002187:db:shokworks", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "shok_wp", 
+            "PreferredMaintenanceWindow": "sat:05:49-sat:06:19", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "shokworks.cgozdt15qkqs.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "10.2.21", 
+            "MaxAllocatedStorage": 21, 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "us-east-1f", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-EYWMS7QXX63KBNXM3QPVCQDKP4", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "shokworks"
+        }
+    ]
+}
