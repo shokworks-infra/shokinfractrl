@@ -1,0 +1,28 @@
+#!/bin/bash
+#########
+# Si esta la carpeta temp eliminala
+#
+if [ -d /var/www/temp ]; then
+	rm -rf /var/www/temp
+fi
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-int" ]
+then
+        if [ -d /var/www/int.shokinfractrl ]; then
+             rm -rf /var/www/int.shokinfractrl
+        fi
+fi
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-uat" ]
+then
+        if [ -d /var/www/uat.shokinfractrl ]; then
+             rm -rf /var/www/uat.shokinfractrl
+        fi
+fi
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-pro" ]
+then
+        if [ -d /var/www/pro.shokinfractrl ]; then
+             rm -rf /var/www/pro.shokinfractrl
+        fi
+fi

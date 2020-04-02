@@ -1,0 +1,12 @@
+None	shokworks3	20	mariadb	True	adminshok	2020-02-02T15:00:00Z
+shokworks3.coutryigfemz.us-east-1.rds.amazonaws.com
+None	shokworks3pro2	20	mariadb	True	shokworks3pro2	2020-02-02T15:00:00Z
+shokworks3pro2.coutryigfemz.us-east-1.rds.amazonaws.com
+None	shophi-dev-stg	20	mariadb	False	shophiadmin	2020-02-02T15:00:01Z
+shophi-dev-stg.coutryigfemz.us-east-1.rds.amazonaws.com
+None	shophisdevstg	20	mariadb	False	shophisdevstg	2020-02-02T15:00:00Z
+shophisdevstg.coutryigfemz.us-east-1.rds.amazonaws.com
+shophisticated	shophisticated	30	mysql	True	shophistadmin	2020-01-28T01:55:00Z
+shophisticated.coutryigfemz.us-east-1.rds.amazonaws.com
+shophisticated	shoprestore	30	mysql	True	shophistadmin	2020-02-02T15:00:00Z
+shoprestore.coutryigfemz.us-east-1.rds.amazonaws.com

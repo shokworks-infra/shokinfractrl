@@ -1,0 +1,52 @@
+#!/bin/bash
+#cd /etc/
+#mv letsencrypt letsencrypt.old
+#aws s3 cp s3://conexpar-infra/letsencrypt/letsencrypt.tar.gz /etc/letsencrypt.tar.gz
+#tar -xvzf letsencrypt.tar.gz
+
+DATE=`date +%Y%m%d%H%M`
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-int" ]
+then
+        mv /var/www/temp /var/www/int.shokinfractrl
+	aws s3 cp  s3://shokinfractrl/conexion.php_shokinfractrl-int /var/www/int.shokinfractrl/config/conexion.php
+	chown www-data.www-data /var/www/int.shokinfractrl/
+	chown www-data.www-data /var/www/int.shokinfractrl/* -R
+	chmod 775 /var/www/int.shokinfractrl -R
+        find /var/www/int.shokinfractrl/ -name "*.php" | xargs dos2unix
+        find /var/www/int.shokinfractrl/ -name "*.js" | xargs dos2unix
+        find /var/www/int.shokinfractrl/ -name "*.css" | xargs dos2unix
+	service nginx restart
+	cd /var/www/int.shokinfractrl/
+fi
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-uat" ]
+then
+        mv /var/www/temp /var/www/uat.shokinfractrl
+        chown www-data.www-data /var/www/uat.shokinfractrl/
+        chown www-data.www-data /var/www/uat.shokinfractrl/* -R
+        chown www-data.www-data /var/www/uat.shokinfractrl/.[a-z]* -R
+	chmod 775 /var/www/uat.shokinfractrl -R
+        touch -t $DATE /var/www/uat.shokinfractrl/*/*/*/*
+	find /var/www/uat.shokinfractrl/  -name "*.php" | xargs dos2unix
+        find /var/www/uat.shokinfractrl/  -name "*.js" | xargs dos2unix
+        find /var/www/uat.shokinfractrl/ -name "*.css" | xargs dos2unix
+        service nginx restart
+        cd /var/www/uat.shokinfractrl/
+fi
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "shokinfractrl-pro" ]
+then
+        mv /var/www/temp /var/www/pro.shokinfractrl
+        aws s3 cp  s3://shokinfractrl/conexion.php_shokinfractrl-pro /var/www/pro.shokinfractrl/config/conexion.php
+        chown www-data.www-data /var/www/pro.shokinfractrl/
+        chown www-data.www-data /var/www/pro.shokinfractrl/* -R
+        chmod 775 /var/www/pro.shokinfractrl -R
+        find /var/www/pro.shokinfractrl/  -name "*.php" | xargs dos2unix
+        find /var/www/pro.shokinfractrl/  -name "*.js" | xargs dos2unix
+        find /var/www/pro.shokinfractrl/ -name "*.css" | xargs dos2unix
+        service nginx restart
+        cd /var/www/pro.shokinfractrl/
+fi
+
+

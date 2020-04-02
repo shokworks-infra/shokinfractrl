@@ -1,0 +1,258 @@
+A.img {
+	
+}
+
+body {
+	margin: 0; padding: 0; border:0;
+	background: #fff; font-size: 12px;
+	padding:0;  margin:0;
+	color:#666666; height: 100%;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+#wrapper {width:1000px; background:#fff; margin:10px auto; text-align:left;}
+/* #header {width:1000px; height:90px; float:left; background:#fff url(../images/top_asamblea.swf); position:relative;}*/
+#left_column {width:140px; background:transparent; float:left; padding:0 2px 0 0}
+#right_column {width:850px; background:transparent; float:left; padding:0 2px 0 2px;}
+
+form { margin: 0; padding: 0; }
+table { font-size:12px; }
+td {line-height:15px;   }
+p{
+ text-indent:20px;
+ line-height:200%;
+}
+.sel{font-size:10px}
+
+.error {FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #fe0009; FONT-STYLE: normal;TEXT-ALIGN: left; TEXT-DECORATION: none}
+
+.msg { padding-left:3px; font-size:11px; padding-bottom:3px; vertical-align:middle; color:#0047b6; line-height:12px; padding-top:3px; height:20px; text-align:center; text-decoration:none;}
+
+input, select { font-size: 12px;  border: 1px solid silver; }
+textarea      { font-size: 12px;  border: 1px solid silver; }
+button        { font-size: 12px;  }
+
+input.button  { cursor: pointer;   }
+
+input:focus,
+select:focus,
+textarea:focus { background-color: #ffd }
+
+fieldset {
+	margin-bottom: 10px;
+	margin:2px 2px auto 2px;
+	border: 1px #ccc solid;
+	padding: 5px;
+	text-align: left;
+}
+
+.bordetabla td{
+ border:1px solid #000;
+ color:#000;
+ font-family: Arial, Helvetica, sans-serif; 
+}
+.borde{
+ border:1px solid #000;
+ color:#000; 
+}
+
+fieldset p {  margin: 10px 0px;  }
+
+legend    {
+	color: #0B55C4;
+	font-size: 12px;
+	font-weight: bold;
+}
+.left{float:left; width:20px;}
+.col802{float:left; width:30%; vertical-align:middle} 
+.col80{float:left; width:80%}
+.col50{float:left; width:50%}
+.col100{float:left; width:100%}
+.etiqueta2{float:left; width:300px; vertical-align:middle}
+.etiqueta{float:left; width:150px; vertical-align:middle}
+.etiqueta3{float:left; width:80px; vertical-align:middle}
+.inter{padding:2px 2px 2px 2px;}
+
+.titulo{
+	padding-left:3px;
+	font-size:11px;
+	padding-bottom:1px;
+	vertical-align:middle;
+	color:#000000;
+	line-height:12px;
+	padding-top:3px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	font-style: normal;
+	font-weight: bold;
+}
+.titulo2{
+	padding-left:3px;
+	font-size:10px;
+	padding-bottom:1px;
+	vertical-align:middle;
+	color:#000000;
+	line-height:12px;
+	padding-top:3px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	font-style: normal;
+	font-weight: bold;
+}
+.titulo3{
+
+	padding-left:3px;
+	font-size:11px;
+	padding-bottom:0px;
+	vertical-align:middle;
+	color:#000000;
+	line-height:12px;
+	padding-top:3px;
+	height:10px;
+	text-align:left;
+	text-decoration:none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+table.lista tr.odd th,
+table.lista tr.odd {
+
+ background-color:#deefff;
+}
+
+/* even table rows 2,4,6,8,... */
+table.lista tr.even th,
+table.lista tr.even {
+    background-color:#F9F9F9;
+}
+
+/* marked table rows */
+table.lista tr.marked th,
+table.lista tr.marked {
+    background-color: #E4EBFF;
+}
+
+/* hovered table rows */
+table.lista tr.odd:hover,
+table.lista tr.even:hover,
+table.lista tr.odd:hover th,
+table.lista tr.even:hover th,
+table.lista tr.hover th,
+table.lista tr.hover {
+
+    background-color: #FFEDDC;
+}
+
+table.lista {
+border:#95bfff solid 1px;
+line-height:20px;
+}
+
+table.lista td{
+padding:1px 2px 1px 10px;
+}
+table.lista 
+a:link, a:visited {
+ color:#666666;
+ text-decoration:none;
+}
+
+table.lista
+thead, th{
+	
+    background-color: #95bfff;
+}
+table.lista tfoot, th{
+    background-color: #95bfff;
+}
+
+.centrar{
+      
+border:0;
+position: absolute;
+/*nos posicionamos en el centro del navegador*/
+top:50%;
+left:50%;
+/*determinamos una anchura*/
+width:400px;
+/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+margin-left:-200px;
+/*determinamos una altura*/
+height:300px;
+/*indicamos que el margen superior, es la mitad de la altura*/
+margin-top:-150px;
+/*border:1px solid #808080;*/
+padding:5px;
+}
+
+.boton {
+	text-decoration: none;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 10px;
+    border: 2px solid #0016b0;
+}
+.boton:hover{
+    opacity: 0.6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.campoDatos{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    background-color: blue;
+    border: 2px solid #0016b0;
+}
+
+.tablaform {
+  border: none;
+  margin: 10 10 10 10 ;
+  padding: 0;
+  border-spacing: thin;
+}
+.tablaform td {    
+   border-spacing: thin;
+   padding:10px 10px 10px 10px;
+   background-color:#98AFC7;
+   font-size: 10px;
+   font-weight: bold;
+   color: black; 
+}
+.tablaform th {
+  padding: 10px 10px 10px 10px;
+  background-color: blue;
+  font-weight: bold;
+  color: white;
+}
+
+.tablaerror {
+  border: none;
+  margin: 10 10 10 10 ;
+  padding: 0;
+  border-spacing: thin;
+}
+.tablaerror td {    
+   border-spacing: thin;
+   padding:10px 10px 10px 10px;
+   background-color:#98AFC7;
+   font-size: 10px;
+   font-weight: bold;
+   color: black; 
+}
+.tablaerror th {
+  padding: 10px 10px 10px 10px;
+  background-color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+}
