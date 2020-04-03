@@ -21,33 +21,24 @@ $tipoDato = " varchar($tamano)";
         $campo = "region";
         $region = $valor; 
         break;
-    case 'attachtime': 
-        $valor = str_replace("T", " ", $valor);
-        $valor = str_replace("Z", "", $valor);
-        $valor = str_replace("t", " ", $valor);
-        $valor = str_replace("z", "", $valor);
-        $tipoDato = " datetime ";
-        break;
-    case 'launchtime': 
-        $valor = str_replace("T", " ", $valor);
-        $valor = str_replace("Z", "", $valor);
-        $valor = str_replace("t", " ", $valor);
-        $valor = str_replace("z", "", $valor);
-        $tipoDato = " datetime ";
-        break;
-    case 'latestrestorabletime' || 'instancecreatetime': 
+    case 'attachtime'; 
+    case 'launchtime';
+    case 'latestrestorabletime';
+    case 'instancecreatetime': 
         $valor = str_replace("T", " ", $valor);
         $valor = str_replace("Z", "", $valor);
         $valor = str_replace("t", " ", $valor);
         $valor = str_replace("z", "", $valor);
         $tipoDato = " datetime ";
         break;        
-    case 'ebsoptimized' || 'multiaz':
+    case 'ebsoptimized';
+    case 'multiaz':
         if (strlen(trim($valor)) == 0 ) {
         	$valor = 0;
         } else {
         	$valor = 1; 
-        }
+	}
+	break;
   }
 
   # Hay valores boolean que vienen como string
