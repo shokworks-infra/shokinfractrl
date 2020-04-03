@@ -173,7 +173,7 @@ while ($fila = fetch($result)) {
                 $value    = ajustarCampo($key, $value) ;
                 $campos  .= $key . ", ";
                 $valores .= "'$value', ";
-              }
+	      }
 
             }
 

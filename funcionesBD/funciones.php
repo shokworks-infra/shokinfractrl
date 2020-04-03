@@ -21,31 +21,28 @@ $tipoDato = " varchar($tamano)";
         $campo = "region";
         $region = $valor; 
         break;
-    case "instanceid":
-        $instanciaIdAnt = $valor;
-        break;
-    case "attachtime": 
+    case 'attachtime': 
         $valor = str_replace("T", " ", $valor);
         $valor = str_replace("Z", "", $valor);
         $valor = str_replace("t", " ", $valor);
         $valor = str_replace("z", "", $valor);
         $tipoDato = " datetime ";
         break;
-    case "launchtime": 
+    case 'launchtime': 
         $valor = str_replace("T", " ", $valor);
         $valor = str_replace("Z", "", $valor);
         $valor = str_replace("t", " ", $valor);
         $valor = str_replace("z", "", $valor);
         $tipoDato = " datetime ";
         break;
-    case "latestrestorabletime" || "instancecreatetime": 
+    case 'latestrestorabletime' || 'instancecreatetime': 
         $valor = str_replace("T", " ", $valor);
         $valor = str_replace("Z", "", $valor);
         $valor = str_replace("t", " ", $valor);
         $valor = str_replace("z", "", $valor);
         $tipoDato = " datetime ";
         break;        
-    case "ebsoptimized" || "multiaz":
+    case 'ebsoptimized' || 'multiaz':
         if (strlen(trim($valor)) == 0 ) {
         	$valor = 0;
         } else {
