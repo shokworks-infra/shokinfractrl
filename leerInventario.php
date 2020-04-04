@@ -106,7 +106,7 @@ $resultDel   = ejecutarSQL($c, $sqlDel);
 
 // Leer las cuentas registradas.
 //$sql    = "select * from cuentas where codcue = 7;";
-$sql         = "select * from cuentas where activa = 1;";
+$sql         = "select * from cuentas where activa = 1 order by cuenta;";
 $result      = ejecutarSQL($c, $sql);
 $fecha       = date("Y-m-d");
 
@@ -120,7 +120,7 @@ while ($fila = fetch($result)) {
 
   // Leer las regiones
   //$sqlReg    = "select * from regiones where  codreg = 12;";
-  $sqlReg    = "select * from regiones order by cuenta;";
+  $sqlReg    = "select * from regiones;";
   $resultReg = ejecutarSQL($c, $sqlReg);
 
   echo "Cuenta $cuenta <br>";
