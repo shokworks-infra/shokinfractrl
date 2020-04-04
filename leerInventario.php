@@ -95,13 +95,13 @@ if (!$c ) {
   echo "No se conecto";
   exit;
 }
-echo "Conectado\n";
+// echo "Conectado\n";
 
 // Eliminar las Tags de las instancia, porque cuando son eliminandas o cambiadas de region no se actualiza la base.
 $sqlDel      = "Delete from tags;";
 $resultDel   = ejecutarSQL($c, $sqlDel);
-// Eliminar las instancias, porque cuando son eliminandas o cambiadas de region no se actualiza la base.
-$sqlDel     = "Delete from instancias;";
+// Eliminar las instancias, porque cuando son eliminandas o cambiadas de region en AWS no se actualiza la base.
+$sqlDel      = "Delete from instancias;";
 $resultDel   = ejecutarSQL($c, $sqlDel);
 
 // Leer las cuentas registradas.
@@ -120,7 +120,7 @@ while ($fila = fetch($result)) {
 
   // Leer las regiones
   //$sqlReg    = "select * from regiones where  codreg = 12;";
-  $sqlReg    = "select * from regiones;";
+  $sqlReg    = "select * from regiones order by cuenta;";
   $resultReg = ejecutarSQL($c, $sqlReg);
 
   echo "Cuenta $cuenta <br>";
@@ -133,15 +133,15 @@ while ($fila = fetch($result)) {
       $codreg = $region['codreg'];
       $region = $region['region'];
 
-      echo "$cuenta $region \n";
+      // echo "$cuenta $region \n";
       $archTemp = "${cuenta}_${region}_${fecha}.rpt";
       //$archTemp = "kinesis-dns_eu-west-1_2020-01-31.rpt";
       $comando  = "aws ec2 describe-instances --profile $cuenta --region $region  > $archTemp";
-      echo $comando;
-      echo "<br>";
+      //echo $comando;
+      // echo "<br>";
 
       system($comando);
-
+      // Si el archivo generado tiene 3 lineas o menos significa que no hay informacion
       if (count(file($archTemp)) < 4 ) {
         unlink($archTemp);
         continue;
@@ -152,7 +152,7 @@ while ($fila = fetch($result)) {
       $instancias = $data['Reservations'];
 
       for ($i = 0 ; $i < count($instancias); $i++) {
-          echo "<br>Entrando<br>";
+          // echo "<br>Entrando<br>";
           $seccion     = $instancias[$i]['Instances'][0];
           //var_dump($seccion['State']);
           $instanceId  = $seccion['InstanceId'];
@@ -194,7 +194,7 @@ while ($fila = fetch($result)) {
             exit;
           }
 
-          //  Procesar los datos quq vienen en arrays.
+          //  Procesar los datos que vienen en arrays.
           $resultTags  = ejecutarSql($c, Tags($seccion['Tags']));
 
       } // for ($i = 0 ; $i < count($instancias); $i++)
